@@ -7,7 +7,13 @@
     </ul>
 
     <diV class="add-members-container">
-      <input type="text" placeholder="name " />
+      <input
+        #addMemberInput
+        type="text"
+        placeholder="name "
+        (input)="onInput(addMemberInput.value)"
+      />
+
       <button (click)="addMember()">Add</button>
     </diV>
     <div class="input-container">
