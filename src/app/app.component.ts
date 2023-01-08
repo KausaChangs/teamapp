@@ -17,6 +17,7 @@ export class AppComponent {
 
   addMember() {
     this.members.push(this.newMemberName);
+    this.newMemberName = ' ';
 
     console.log(this.members);
   }
