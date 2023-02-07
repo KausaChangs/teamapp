@@ -29,4 +29,6 @@ export class AppComponent {
     this.members.push(this.newMemberName);
     this.newMemberName = ' ';
   }
+
+  generateTeams() {}
 }
