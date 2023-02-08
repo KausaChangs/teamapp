@@ -30,5 +30,15 @@ export class AppComponent {
     this.newMemberName = ' ';
   }
 
-  generateTeams() {}
+  generateTeams() {
+    if (!this.numberOfTeams || this.numberOfTeams <= 0) {
+      return;
+    }
+
+    const allMembers = [...this.members];
+
+    for (let i = 0; i < this.numberOfTeams; i++) {
+      const randomIndex = Math.floor(Math.random() * allMembers.length);
+    }
+  }
 }
