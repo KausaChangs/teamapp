@@ -10,6 +10,7 @@ export class AppComponent {
   members: string[] = [];
   errorMessage = '';
   numberOfTeams: number | '' = '';
+  teams: string[][] = [];
 
   onInput(member: string) {
     this.newMemberName = member;
