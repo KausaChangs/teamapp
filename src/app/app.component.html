@@ -28,7 +28,7 @@
     </div>
     <P *ngIf="errorMessage" class="error-msg">{{ errorMessage }}</P>
   </div>
-  <div class="teams-container">
+  <div *ngIf="teams.length" class="teams-container">
     <div class="team-container">
       <h3>Team 3</h3>
       <ul>
