@@ -28,5 +28,7 @@
     </div>
     <P *ngIf="errorMessage" class="error-msg">{{ errorMessage }}</P>
   </div>
-  <div *ngIf="teams.length" class="teams-container"></div>
+  <div class="teams-container">
+    <app-team></app-team>
+  </div>
 </diV>
